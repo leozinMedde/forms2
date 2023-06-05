@@ -3,21 +3,21 @@
         margin: 0; padding: 0; box-sizing: border-box;
     }
     body{
-        background-color: #5F7C8A;
+        background-color: #4c046d;
     }
     form{
-        background-color: white;
+        background-color: rgb(148, 3, 161);
         max-width: 500px;
-        width: 70%;
-        padding: 20px;
+        width: 100%;
+        padding: 45px;
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        border-radius: 20px;
     }
     form h3{
-        text-align: center;
-        color: #5F7C8A;
+        color: #000000;
         font-family: 'Courier New', Courier, monospace;
     }
     form input[type=text],
@@ -29,12 +29,21 @@
       margin: 10px 0;
      
     }
+    form input[type=radio],
+    form input[type=checkbox]{
+      width: 10%;
+      height: 15px;
+      border: 1px solid#ccc;
+      padding-left: 10px;
+      margin: 6px 5px;
+     
+    }
     form input[type=submit]{
-        width: 100%;
+        width: 15%;
         height: 40px;
         cursor: pointer;
-        background: #5F7C8A;
-        color: white;
+        background: #290157;
+        color: rgb(35, 167, 2);
         border: 0;
         border-radius: 20px;
         transition: 1s;
@@ -47,4 +56,14 @@
     }
     form input[type=password]:focus{
         outline: 0;
+    }
+    form input[type=reset]{
+        width: 15%;
+        height: 40px;
+        cursor: pointer;
+        background: #290157;
+        color: rgb(255, 0, 0);
+        border: 0;
+        border-radius: 20px;
+        transition: 1s;
     }
